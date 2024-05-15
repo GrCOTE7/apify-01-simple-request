@@ -4,19 +4,7 @@
     "type": "module",
     "description": "This is an example to learn Apify actor.",
     "dependencies": {
-        "apify": "^3.2.0",
-        "crawlee": "^3.9.2",
-        "esbuild": "^0.21.2",
-        "playwright": "^1.44.0",
-        "puppeteer": "^22.8.1",
-        "puppeteer-extra-plugin": "^3.2.3",
-        "puppeteer-extra-plugin-stealth": "^2.11.2",
-        "puppeteer-extra-plugin-user-preferences": "^2.4.1",
-        "typescript": "^5.4.5"
-    },
-    "devDependencies": {
-        "@apify/eslint-config": "^0.4.0",
-        "eslint": "^9.2.0"
+        "crawlee": "^3.9.2"
     },
     "scripts": {
         "start": "node src/main.mjs",
