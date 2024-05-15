@@ -1,6 +1,7 @@
 import { RequestQueue, CheerioCrawler, log } from 'crawlee';
 
 const requestQueue = await RequestQueue.open();
+await requestQueue.addRequest({ url: 'https://crawlee.dev' });
 await requestQueue.addRequest({ url: 'https://google.com' });
 await requestQueue.addRequest({ url: 'https://c57.fr' });
 
@@ -15,11 +16,11 @@ const crawler = new CheerioCrawler({
         // Extract <title> text with Cheerio.
         // See Cheerio documentation for API docs.
         const title = $('title').text();
-        log.warning('Result:');
+        log.info('Result:');
         console.log(`The title of "${request.url}" is: ${title}.`);
-        websites.push({ url: request.url, title });
+        websites.push({ url: request.url.slice(8), title });
     },
 });
 // Start the crawler and wait for it to finish
-await crawler.run(['https://crawlee.dev']);
+await crawler.run(['https://apify.com']);
 console.table(websites);
