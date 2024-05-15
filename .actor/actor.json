@@ -1,0 +1,12 @@
+{
+	"actorSpecification": 1,
+	"name": "GC7-01-SimpleRequest",
+	"title": "Project Crawler JavaScript",
+	"description": "Crawlee project in JavaScript.",
+	"version": "0.1",
+	"meta": {
+		"templateId": "js-crawlee-puppeteer-chrome"
+	},
+	"input": "./input_schema.json",
+	"dockerfile": "./Dockerfile"
+}
