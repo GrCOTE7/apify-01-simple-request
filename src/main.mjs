@@ -1,9 +1,16 @@
 import { RequestQueue, CheerioCrawler, log } from 'crawlee';
 
+log.setLevel(log.LEVELS.WARNING); // Uncomment to see INFO logs
+const tableResult = 1; // 0 for textual result
+
+
+// Create queue and add our urls to it
 const requestQueue = await RequestQueue.open();
-await requestQueue.addRequest({ url: 'https://crawlee.dev' });
-await requestQueue.addRequest({ url: 'https://google.com' });
-await requestQueue.addRequest({ url: 'https://c57.fr' });
+const urls = ['https://crawlee.dev', 'https://google.com', 'https://c57.fr'];
+
+for (const url of urls) {
+    await requestQueue.addRequest({ url });
+}
 
 // Create the crawler and add the queue with our URL
 // and a request handler to process the page.
@@ -16,11 +23,15 @@ const crawler = new CheerioCrawler({
         // Extract <title> text with Cheerio.
         // See Cheerio documentation for API docs.
         const title = $('title').text();
-        log.info('Result:');
-        console.log(`The title of "${request.url}" is: ${title}.`);
+        if (!tableResult) {
+            log.info('Result:');
+            console.log(`The title of "${request.url}" is: ${title}.`);
+        }
         websites.push({ url: request.url.slice(8), title });
     },
 });
 // Start the crawler and wait for it to finish
 await crawler.run(['https://apify.com']);
-console.table(websites);
+
+websites.sort((a, b) => a.url.localeCompare(b.url));
+if (tableResult) console.table(websites);

@@ -1,5 +1,5 @@
 {
-    "name": "my-actor",
+    "name": "Simple crawlee",
     "version": "0.0.1",
     "type": "module",
     "description": "This is an example to learn Apify actor.",
