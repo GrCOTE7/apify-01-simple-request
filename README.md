@@ -6,15 +6,15 @@ Retrieve the page title from a list of URLs and display the result in a table so
 
 *Requête du titre de la page depuis une URL et affiche le résultat sous forme de tableau*
 
-If you want, you can contribute to ameliorate this free code:
-- Fork this repository,
-- code, commit and push at one’s pleasure,
+If you want, you can contribute to improve this open-source code:
+- Fork this repository above,
+- code, commit and push as you please,
 - and then, pull request !
 
 
-*Si vous le souhaitez, vous pouvez contribuer à améliorer ce code 'opensource':*
-- *Cloner le code,*
-- *Coder..., soumettre et pousser ad libitum !*,
-- et ensuite, proposer votre version !
+*Si vous le souhaitez, vous pouvez contribuer à améliorer ce code 'libre':*
+- *Clonez le dépôt ci-dessous,*
+- *Codez..., soumettez et poussez ad libitum !*,
+- *et ensuite, proposez la fusion de votre version !*
 
 https://github.com/GrCOTE7/actor1
