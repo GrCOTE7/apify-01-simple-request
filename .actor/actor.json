@@ -3,7 +3,7 @@
 	"name": "GC7-01-SimpleRequest",
 	"title": "Project Crawler JavaScript",
 	"description": "Crawlee project in JavaScript.",
-	"version": "0.1",
+	"version": "1.0",
 	"meta": {
 		"templateId": "js-crawlee-puppeteer-chrome"
 	},
