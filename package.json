@@ -1,8 +1,8 @@
 {
-    "name": "Simple crawlee",
-    "version": "0.0.1",
+    "name": "01-simple-request",
+    "version": "1.0.0",
     "type": "module",
-    "description": "This is an example to learn Apify actor.",
+    "description": "This is a basic example to learn Apify actor.",
     "dependencies": {
         "crawlee": "^3.10.0"
     },
