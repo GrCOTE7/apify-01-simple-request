@@ -33,7 +33,7 @@ const crawler = new CheerioCrawler({
             log.info('Result:');
             console.log(`The title of "${request.url}" is: ${title}.`);
         }
-        websites.push({ url: request.url.slice(8), title });
+        websites.push({ url: request.url, title });
     },
 });
 // Start the crawler and wait for it to finish
@@ -42,5 +42,5 @@ await crawler.run(['https://apify.com']);
 
 // Show result as table, sorting by URL, without 'https://'
 // Affiche le résultat sous forme de tableau, trié par URL, sans le 'https://'
-websites.sort((a, b) => a.url.localeCompare(b.url));
+websites = websites.map(website => ({ ...website, url: website.url.slice(8) })).sort((a, b) => a.url.localeCompare(b.url));
 if (tableResult) console.table(websites);
