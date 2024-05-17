@@ -33,6 +33,6 @@ If you want, you can contribute to improve this open-source code:
 - *Codez..., soumettez et poussez ad libitum !*,
 - *et ensuite, proposez la fusion de votre version !*
 
-https://github.com/GrCOTE7/actor1
+https://github.com/GrCOTE7/apify-01-simple-request
 
 (Public repository - *Dépôt public*)
