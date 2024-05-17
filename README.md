@@ -2,9 +2,9 @@
 
 # *Requête du titre de la page depuis une URL → Tableau*
 
-Retrieve the page title from a list of URLs and display the result in a table sorted by URL
+Retrieve the page title from a list of URLs and display the result in a table sorted by "url" 's column
 
-*Requête du titre de la page depuis une URL et affiche le résultat sous forme de tableau*
+*Requête du titre de la page depuis une URL et affiche le résultat sous forme de tableau trié par la colonne "url"*
 
 ---
 
