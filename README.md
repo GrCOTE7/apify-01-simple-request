@@ -7,7 +7,6 @@ Retrieve the page title from a list of URLs and display the result in a table so
 *Requête du titre de la page depuis une URL et affiche le résultat sous forme de tableau trié par la colonne "url"*
 
 ---
-
 # Use:
 # *Utilisation* :
 
@@ -18,14 +17,11 @@ To be used either as an Actor directly in your Apify console (So small → Very 
 ```
 apify run --purge
 ```
-
 ---
-
 If you want, you can contribute to improve this open-source code:
 - Fork this repository above,
 - code, commit and push as you please,
 - and then, pull request !
-
 
 *Si vous le souhaitez, vous pouvez contribuer à améliorer ce code 'libre' :*
 - *Clonez le dépôt ci-dessous,*
