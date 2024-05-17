@@ -21,7 +21,6 @@ apify run --purge
 
 ---
 
-
 If you want, you can contribute to improve this open-source code:
 - Fork this repository above,
 - code, commit and push as you please,
